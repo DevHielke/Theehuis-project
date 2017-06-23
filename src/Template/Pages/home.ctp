@@ -30,6 +30,11 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <!DOCTYPE html>
 <html>
 <head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -58,19 +63,8 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </div>
     </nav>
 <body class="home">
-<!--
-    <header>
-        <div class="header-image">
-            <?= $this->Html->image('http://cakephp.org/img/logo-cake.png') ?>
-            <h1>Get the Tea Ready</h1>
-            <p>burn fast, grow solid</p>
-        </div>
-    </header>
-    <div class="layout">
-      <div class="layout-image">
--->
-   
-    
+<div class="layout">
+      <div class="layout-image"><br><br>
 <?php
 require(dirname(__FILE__)."/../config.php");
 // Create connection
@@ -80,19 +74,63 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 // Dishes
-$sql = "SELECT id, title, content, price FROM dishes";
-$result = $conn->query($sql);
+$sql = "SELECT id, title, content, price, category FROM dishes";
+$resultdish = $conn->query($sql);
 // Menus
 $sqlmenu = "SELECT id, title, content FROM menus";
 $resultmenu = $conn->query($sqlmenu);
+
+$sqlmenutitel = "SELECT title FROM menus";
+$resultmenutitel = $conn->query($sqlmenutitel);
+
 // Category
-$sqlcat = "SELECT id, title, content FROM category";
+$sqlcat = "SELECT id, title, menu FROM category";
 $resultscat = $conn->query($sqlcat);
 
-?>
-<br><br>
 
- <?php foreach ($result as $row): ?>
+// DINNER   WHERE email='$emailid'";
+
+$sqlselectmenu = "SELECT id, title, menu FROM category WHERE menu = 'Dessert'";
+$resultselectmenu = $conn->query($sqlselectmenu);
+
+
+?>
+       <?php foreach ($resultmenu as $rowmenu): ?>
+     <p> <?= $rowmenu['title'] ?> 
+         <?php //    <?= $this->Html->link($menu->title, ['action' => 'view', $menu->id]) ?>  </p>
+  
+      <?php endforeach; ?>
+
+
+
+
+
+
+
+<?php foreach ($resultmenu as $rowmenu): ?>
+<div class="list-group">
+  <p class="list-group-item  active">
+    <?= $rowmenu['title'] ?>
+  </p>
+  <?php foreach ($resultscat as $rowcat): ?>
+  <a href="#" class="list-group-item"><strong><?= $rowcat['title'] ?></strong></a>
+   <?php foreach ($resultdish as $rowdish): ?>
+ <a href="" class="list-group-item">
+ <ul><li><?= $rowdish['title'] ?></li></ul> </a>
+    <?php endforeach; ?>
+    <?php endforeach; ?>
+  </a>
+</div>
+  <?php endforeach; ?>
+
+
+
+
+<br><br>
+ <!--  
+  DISHES
+  -->
+ <?php foreach ($resultdish as $row): ?>
     <div class="panel panel-default">
   <div class="panel-body">
     <h3 class="panel-title"><?= $row['title'] ?></h3>
@@ -100,12 +138,15 @@ $resultscat = $conn->query($sqlcat);
   <div class="panel-body">
          <p>Prijs: <?= $row['price'] ?> </o><br>
       <p> Beschrijving:  <td><?= $row['content'] ?> </p>
+       <p> Categorie:  <td><?= $row['category'] ?> </p>
         <?php //echo " " . $row["id"]. ": " . $row["title"]. " " . $row["content"]. ": " . $row["price"].  "<br>"; ?></td>
       </div>
 </div>
   <?php endforeach; ?>
 
- 
+ <!--  
+  MENUS
+  -->
  <?php foreach ($resultmenu as $rowmenu): ?>
     <div class="panel panel-default">
   <div class="panel-body">
@@ -116,17 +157,21 @@ $resultscat = $conn->query($sqlcat);
       </div>
 </div>
   <?php endforeach; ?>
-
+ <!--  
+  CATEGORY
+  -->
  <?php foreach ($resultscat as $rowcat): ?>
     <div class="panel panel-default">
   <div class="panel-body">
     <h3 class="panel-title"><?= $rowcat['title'] ?></h3>
   </div>
   <div class="panel-body">  
-      <p> Beschrijving:  <td><?= $rowcat['content'] ?> </p>
+      <p> Menu:  <td><?= $rowcat['menu'] ?> </p>
       </div>
 </div>
   <?php endforeach; ?>
+    </div>
+    </div>
     </div>
     </div>
 </body>

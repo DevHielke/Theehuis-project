@@ -5871,3 +5871,1597 @@ Stack Trace:
 #5 {main}
 
 
+2017-06-23 10:17:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /Theehuis/code/dishes/add
+Referer URL: http://localhost:8080/Theehuis/code/dishes/add
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(276): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Query.php(189): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1642): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1536): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1465): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(570): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1466): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\Theehuis\code\src\Controller\DishesController.php(69): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 [internal function]: App\Controller\DishesController->add()
+#12 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DishesController))
+#15 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2017-06-23 10:18:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /Theehuis/code/dishes/add
+Referer URL: http://localhost:8080/Theehuis/code/dishes/add
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(276): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Query.php(189): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1642): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1536): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1465): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(570): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1466): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\Theehuis\code\src\Controller\DishesController.php(69): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 [internal function]: App\Controller\DishesController->add()
+#12 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DishesController))
+#15 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2017-06-23 10:19:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /Theehuis/code/dishes/add
+Referer URL: http://localhost:8080/Theehuis/code/dishes/add
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(172): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(276): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Query.php(189): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1642): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1536): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1465): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Connection.php(570): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1466): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\Theehuis\code\src\Controller\DishesController.php(69): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 [internal function]: App\Controller\DishesController->add()
+#12 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\DishesController))
+#15 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2017-06-23 11:09:04 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:12:58 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\Theehuis\code\src\Template\Dishes\edit.ctp, line 3]
+Request URL: /Theehuis/code/dishes/edit/1
+Referer URL: http://localhost:8080/Theehuis/code/dishes
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 11:12:58 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /Theehuis/code/dishes/edit/1
+Referer URL: http://localhost:8080/Theehuis/code/dishes
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 3)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 11:20:36 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 123]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 123
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:20:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 123]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 123
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:20:39 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:33:57 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:40:04 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:41:24 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:43:41 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:43:47 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 11:44:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Category\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Category\\view.ctp',
+)
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\View\View.php(585): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoryController))
+#4 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2017-06-23 11:52:40 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 38]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 11:52:40 Error: [Cake\Error\FatalErrorException] syntax error, unexpected end of file
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 38)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 11:53:23 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 32]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 11:53:23 Error: [Cake\Error\FatalErrorException] syntax error, unexpected end of file
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 11:53:42 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:53:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:53:55 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:53:55 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:54:46 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:55:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:56:44 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 24]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 24
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 11:59:34 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:00:08 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:00:21 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:02:18 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:02:31 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:03:25 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 27]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:04:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:05:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:06:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:06:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:06:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:06:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\view.ctp, line 26]
+Request URL: /Theehuis/code/category/view/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\view.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 12:06:17 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 12:07:53 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 12:07:58 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 12:10:37 Error: [Cake\View\Exception\MissingTemplateException] Template file "Category\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Category\\edit.ctp',
+)
+Request URL: /Theehuis/code/category/edit/1
+Referer URL: http://localhost:8080/Theehuis/code/category
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\View\View.php(585): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(617): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoryController))
+#4 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2017-06-23 14:38:45 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Category\add.ctp, line 26]
+Request URL: /Theehuis/code/category/add
+Referer URL: http://localhost:8080/Theehuis/code/category
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Category\add.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:44:22 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 123]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 123
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:50:53 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 148]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 148
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:52:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 144]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 144
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:52:44 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 144]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 144
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:55:35 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 147]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 147
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:55:48 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 147]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 147
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:55:49 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 147]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 147
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:55:50 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 14:56:12 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 147]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 147
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:56:26 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 145]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 145
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:56:36 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 145]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 145
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:57:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 145]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 145
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:58:30 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 103]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 103
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:58:30 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 103]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 103
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 14:58:30 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 147]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 147
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:01:29 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:01:39 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:13:10 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:13:27 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:19:44 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:21:06 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 111]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 111
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:23:57 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:25:21 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:25:27 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:28:03 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 128]
+Request URL: /Theehuis/code/
+Referer URL: http://localhost:8080/Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 128
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:31:54 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:32:07 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:33:25 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:33:30 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:33:39 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:33:45 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 15:40:40 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 105]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 105
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:41:30 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 102]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 15:41:31 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /Theehuis/code/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 15:41:35 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 105]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 105
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 15:42:42 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 105]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 105
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:25:06 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 105]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 105
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:28:11 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 105]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 105
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:35:44 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 16:35:53 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 16:36:09 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-23 16:36:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 112]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 112
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:36:45 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 112]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 112
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:36:46 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 112]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 112
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:37:02 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 112]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 112
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:37:33 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 106]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 106
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:37:33 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 112]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 112
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:38:31 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 110]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 110
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 16:54:11 Warning: Warning (4096): Object of class mysqli_result could not be converted to string in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 106]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 106
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:06:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 80]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 80
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:10:53 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 128]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 17:10:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /Theehuis/code/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 17:11:27 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';' in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 129]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 17:11:27 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';'
+Request URL: /Theehuis/code/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 129)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-06-23 17:12:40 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 127]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 127
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:13:06 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 127]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 127
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:13:43 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 127]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 127
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:15:11 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 127]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 127
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:15:41 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 124]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Pages\home.ctp, line 124
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1005
+Cake\View\View::_render() - CORE\src\View\View.php, line 964
+Cake\View\View::render() - CORE\src\View\View.php, line 588
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 617
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 435
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2017-06-23 17:16:35 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\Theehuis\code\src\Template\Pages\home.ctp, line 125]
+Request URL: /Theehuis/code/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-06-23 17:16:35 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /Theehuis/code/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 125)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

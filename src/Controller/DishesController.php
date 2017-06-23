@@ -65,7 +65,7 @@ class DishesController extends AppController
 		//if the user Dishes data to your application, the POST request  informations are registered in $this->request   
         if ($this->request->is('post')) { // 
             $dishes = $this->Dishes->patchEntity($dishes, $this->request->data);
-			$dishes->user_id = $this->Auth->user('id');
+			//$dishes->user_id = $this->Auth->user('id');
             if ($this->Dishes->save($dishes)) {
 				// success() method of FlashComponent restore messages in session variable.
 				// Flash messages are displayed in views 

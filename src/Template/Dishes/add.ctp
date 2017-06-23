@@ -6,6 +6,7 @@
     <h3 class="panel-title">Gerecht toevoegen</h3>
   </div>
   <div class="panel-body">
+  <form action='' method='post'>
 <?php
 require(dirname(__FILE__)."/../config.php");
 
@@ -16,24 +17,34 @@ if ($conn->connect_error) {
 } 
 $sqlcat = "SELECT id, title, content FROM category";
 $resultscat = $conn->query($sqlcat);
-?>
 
- 
-<?php
     echo $this->Form->create($dishes);
     echo $this->Form->input('title');
     echo $this->Form->input('price'); ?>
+
+
+   <?php //echo $this->Form->input('category'); ?>
+
     <label>Categorie</label>
-    <select>
+    <select name="category">
 <?php foreach ($resultscat as $rowcat): ?>
-    <option value="volvo"> <?= $rowcat['title'] ?> </option>
+    <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
  <?php endforeach; ?>
-</select> <?php
+</select>
+
+  
+ <?php
+
+    if (!empty ($selectOption)) {
+     $selectOption = $_POST['category']; 
+    }
+    //var_dump($selectOption);die;
     echo $this->Form->input('content', ['rows' => '3']);
     ?> <br> <?php
     echo $this->Form->button(__('Maak gerecht'));
     echo $this->Form->end();
 ?>
+</form>
 </div>
 </div>
 </div>

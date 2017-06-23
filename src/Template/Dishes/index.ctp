@@ -9,9 +9,9 @@
  <p><?= $this->Html->link('Gerecht toevoegen', ['action' => 'add']) ?></p>
 <table>
     <tr>
-        <th>Id</th>
-        <th>Prijs</th>
         <th>Gerecht</th>
+        <th>Prijs</th>
+        <th>Category</th>
         <th>Actions</th>
     </tr>
 
@@ -19,11 +19,13 @@
 
     <?php foreach ($dishes as $dish): ?>
     <tr>
-        <td><?= $dish->id ?></td>
-         <td><?= $dish->price ?></td>
         <td>
             <?= $this->Html->link($dish->title, ['action' => 'view', $dish->id]) ?>
         </td>
+        </td>
+         <td>€ <?= $dish->price ?></td>
+        <td>
+          <?= $dish->category ?>
         <td>
             <?= $this->Form->postLink(
                 'Verwijder',
@@ -34,14 +36,6 @@
         </td>
     </tr>
   <?php endforeach; ?>
-    <tr>
-    <?php // if ($this->request->session()->read('Auth.User')){ ?>
-        <td><?php  //<?= $this->Html->Link(__('Log out'),['controller'=>'users','action'=>'logout']) ?>  </td>
-    <?php// }else{  ?>
-        <td><?php // <?= $this->Html->Link(__('Login'),['controller'=>'users','action'=>'login']) ?>  </td>  
-    <?php// } ?>
-    
-    </tr>
 </table>
   </div>
 </div>

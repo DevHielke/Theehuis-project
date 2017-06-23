@@ -68,6 +68,12 @@ class PagesController extends AppController
         }
     }
 
+public function view($id)
+        {
+            $menu = $this->Menus->get($id);
+            $this->set('menus',$menu);
+        }
+        
     public function fetchMyData($model) {
     return $model->find('all');
 }

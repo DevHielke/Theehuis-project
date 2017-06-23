@@ -9,8 +9,8 @@
  <p><?= $this->Html->link('Categorie toevoegen', ['action' => 'add']) ?></p>
 <table>
     <tr>
-        <th>Id</th>
         <th>Titel</th>
+        <th>Menu</th>
         <th>Actions</th>
     </tr>
 
@@ -18,17 +18,18 @@
 
     <?php foreach ($category as $cat): ?>
     <tr>
-        <td><?= $cat->id ?></td>
+        
         <td>
             <?= $this->Html->link($cat->title, ['action' => 'view', $cat->id]) ?>
         </td>
+        <td><?= $cat->menu ?></td>
         <td>
             <?= $this->Form->postLink(
                 'Verwijder',
                 ['action' => 'delete', $cat->id],
                 ['confirm' => 'Are you sure?'])
             ?>
-            <?= $this->Html->link('Wijzig', ['action' => 'edit', $cat->id]) ?>
+            <?php //<?= $this->Html->link('Wijzig', ['action' => 'edit', $cat->id]) ?>
         </td>
     </tr>
   <?php endforeach; ?>
