@@ -9,15 +9,13 @@
   <p><?= $this->Html->link('Gebruiker toevoegen', ['action' => 'add']) ?></p>
 <table>
     <tr>
-        <th>Id</th>
         <th>Email</th>
-        <th>Actions</th>
+        <th></th>
     </tr>
 
 
     <?php foreach ($users as $user): ?>
     <tr>
-        <td><?= $user->id ?></td>
         <td>
             <?= $this->Html->link($user->email, ['action' => 'view', $user->id]) ?>
         </td>

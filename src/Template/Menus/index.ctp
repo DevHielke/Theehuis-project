@@ -9,8 +9,9 @@
 
 	<table>
 	    <tr>
-	        <th>Id</th>
 	        <th>Titel</th>
+	        <th>Geserveerd van</th>
+	        <th>Geserveerd van tot</th>
 	       
 	        <th></th>
 	    </tr>
@@ -19,11 +20,13 @@
 	 
 	    <?php foreach ($menus as $menu): ?>
 	    <tr>
-	        <td><?= $menu->id ?></td>
-	        <td>
+	     <td>
 	            <?= $this->Html->link($menu->title, ['action' => 'view', $menu->id]) ?>
 	        </td>
 	      
+	        <td><?= $menu->servedFrom ?></td>
+	         <td><?= $menu->servedTill ?></td>
+	       
 	        <td>
 	        	            <?= $this->Form->postLink(
 	                'Verwijder',

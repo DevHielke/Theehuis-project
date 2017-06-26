@@ -30,10 +30,10 @@ public function view($id)
 	        if ($this->request->is('post')) {
 	            $menus = $this->Menus->patchEntity($menus, $this->request->data);
 	if ($this->Menus->save($menus)) {
-	                $this->Flash->success(__('Your topic has been saved.'));
+	                $this->Flash->success(__('Your Menu has been saved.'));
 	return $this->redirect(['action' => 'index']);
 	            }
-	            $this->Flash->error(__('Unable to add your topic.'));
+	            $this->Flash->error(__('Unable to add your menu.'));
 	        }
 	        $this->set('menus', $menus);
 	    }

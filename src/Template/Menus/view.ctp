@@ -6,8 +6,8 @@
   </div>
   <div class="panel-body">
 
-	<p><?= h($menus->content) ?></p>
-	<p><small>Created: <?php //echo $menu->created->format(DATE_RFC850) ?></small></p>
+	  <p>Van <?= $menus->servedFrom ?></p>
+	         <p>Tot <?= $menus->servedTill ?></p>
 	</div>
 	</div>
 	</div>

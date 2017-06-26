@@ -9,9 +9,8 @@
 <?php
     echo $this->Form->create($menu);
     echo $this->Form->input('Title');
-    echo $this->Form->input('Beschrijving', ['rows' => '3']);
-    //echo //$this->Form->input('tags');	
-    //echo $this->Form->input('author');	
+    echo $this->Form->input('servedFrom');
+    echo $this->Form->input('ServedTill');
     echo $this->Form->button(__('Maak menu'));
     echo $this->Form->end();
 ?>

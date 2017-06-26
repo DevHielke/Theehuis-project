@@ -15,12 +15,14 @@ require(dirname(__FILE__)."/../config.php");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$sqlcat = "SELECT id, title, content FROM category";
+$sqlcat = "SELECT id, title FROM category";
 $resultscat = $conn->query($sqlcat);
 
     echo $this->Form->create($dishes);
     echo $this->Form->input('title');
-    echo $this->Form->input('price'); ?>
+    echo $this->Form->input('price'); 
+
+    ?>
 
 
    <?php //echo $this->Form->input('category'); ?>
@@ -28,16 +30,15 @@ $resultscat = $conn->query($sqlcat);
     <label>Categorie</label>
     <select name="category">
 <?php foreach ($resultscat as $rowcat): ?>
-    <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
+   <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
  <?php endforeach; ?>
 </select>
 
-  
+<?php foreach ($resultscat as $rowcat): ?>
+<input type="hidden" name="categoryId" value=<?= $rowcat['id'] ?> />
+   <?php endforeach; ?>
  <?php
 
-    if (!empty ($selectOption)) {
-     $selectOption = $_POST['category']; 
-    }
     //var_dump($selectOption);die;
     echo $this->Form->input('content', ['rows' => '3']);
     ?> <br> <?php

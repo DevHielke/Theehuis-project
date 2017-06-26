@@ -11,12 +11,9 @@
     <tr>
         <th>Gerecht</th>
         <th>Prijs</th>
-        <th>Category</th>
-        <th>Actions</th>
+        <th>Categorie</th>
+        <th></th>
     </tr>
-
-<!-- Here's where we loop through our $dishs query object, printing out topic info -->
-
     <?php foreach ($dishes as $dish): ?>
     <tr>
         <td>

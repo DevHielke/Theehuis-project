@@ -88,88 +88,107 @@ $sqlcat = "SELECT id, title, menu FROM category";
 $resultscat = $conn->query($sqlcat);
 
 
-// DINNER   WHERE email='$emailid'";
 
-$sqlselectmenu = "SELECT id, title, menu FROM category WHERE menu = 'Dessert'";
+// LUNCH
+
+$sqlselectmenu = "SELECT id, title, menu FROM category WHERE menu = 'Lunch'";
 $resultselectmenu = $conn->query($sqlselectmenu);
 
+$sqlbroodjes = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='7'";
+$resultbroodjes = $conn->query($sqlbroodjes); 
+
+$sqlsalads = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='17'";
+$resultsalads = $conn->query($sqlsalads); 
+
+$sqlwraps = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='15'";
+$resultwraps = $conn->query($sqlwraps); ?>
+<!-- Dinner -->
+   <?php
+
+$sqlselectmenu1 = "SELECT id, title, menu FROM category WHERE menu = 'Dinner'";
+$resultselectmenu1 = $conn->query($sqlselectmenu1);
+
+$sqldinnerdish = "SELECT id, title, content, price, category FROM dishes WHERE categoryId =id";
+$resultdinner = $conn->query($sqldinnerdish);
 
 ?>
-       <?php foreach ($resultmenu as $rowmenu): ?>
-     <p> <?= $rowmenu['title'] ?> 
-         <?php //    <?= $this->Html->link($menu->title, ['action' => 'view', $menu->id]) ?>  </p>
-  
-      <?php endforeach; ?>
+
+  <div class="list-group">
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong>Lunch</strong></h4><hr>
+      <p class="list-group-item-text"><strong>Broodjes</strong></p>
+          <?php foreach ($resultbroodjes as $rowbrood): ?>
+     <ul><li>  <?= $rowbrood['title'] ?> </br>
+ <?= $rowbrood['content'] ?> <br>
+  € <?= $rowbrood['price'] ?>  </li></ul>
+     <?php endforeach; ?>
+    </a>
+
+  <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Salades</strong></p>
+         <?php foreach ($resultsalads as $rowsalad): ?>
+        <ul><li>  <?= $rowsalad['title'] ?> </br>
+ <?= $rowsalad['content'] ?> <br>
+  € <?= $rowsalad['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+     <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Wraps</strong></p>
+         <?php foreach ($resultwraps as $rowrap): ?>
+        <ul><li>  <?= $rowrap['title'] ?> </br>
+ <?= $rowrap['content'] ?> <br>
+  € <?= $rowrap['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+  </div>
 
 
 
-
-
-
-
-<?php foreach ($resultmenu as $rowmenu): ?>
 <div class="list-group">
   <p class="list-group-item  active">
-    <?= $rowmenu['title'] ?>
+    Lunch
   </p>
-  <?php foreach ($resultscat as $rowcat): ?>
-  <a href="#" class="list-group-item"><strong><?= $rowcat['title'] ?></strong></a>
-   <?php foreach ($resultdish as $rowdish): ?>
+  <a href="#" class="list-group-item"><strong>Broodjes</strong></a>
+   <?php foreach ($resultbroodjes as $rowbrood): ?>
  <a href="" class="list-group-item">
- <ul><li><?= $rowdish['title'] ?></li></ul> </a>
+ <ul><li>  <?= $rowbrood['title'] ?> </br>
+ <?= $rowbrood['content'] ?> <br>
+  € <?= $rowbrood['price'] ?>  </li></ul>
+  <button class="btn btn-primary"> Bestel </button>
+   </a>
+    <?php endforeach; ?> 
+</div>
+
+<div class="list-group">
+  <p class="list-group-item  active">
+    Dinner
+  </p>
+  <?php foreach ($resultselectmenu1 as $rowmenuselects): ?>
+  <a href="#" class="list-group-item"><strong><?= $rowmenuselects['title'] ?></strong></a>
+   <?php foreach ($resultbroodjes as $rowbrood): ?>
+ <a href="" class="list-group-item">
+ <ul><li>  <?= $rowbrood['title'] ?> </br>
+ <?= $rowbrood['content'] ?> <br>
+  € <?= $rowbrood['price'] ?>  </li></ul>
+  <button class="btn btn-primary"> Bestel </button>
+   </a>
     <?php endforeach; ?>
     <?php endforeach; ?>
   </a>
 </div>
-  <?php endforeach; ?>
 
 
 
 
-<br><br>
- <!--  
-  DISHES
-  -->
- <?php foreach ($resultdish as $row): ?>
-    <div class="panel panel-default">
-  <div class="panel-body">
-    <h3 class="panel-title"><?= $row['title'] ?></h3>
-  </div>
-  <div class="panel-body">
-         <p>Prijs: <?= $row['price'] ?> </o><br>
-      <p> Beschrijving:  <td><?= $row['content'] ?> </p>
-       <p> Categorie:  <td><?= $row['category'] ?> </p>
-        <?php //echo " " . $row["id"]. ": " . $row["title"]. " " . $row["content"]. ": " . $row["price"].  "<br>"; ?></td>
-      </div>
-</div>
-  <?php endforeach; ?>
 
- <!--  
-  MENUS
-  -->
- <?php foreach ($resultmenu as $rowmenu): ?>
-    <div class="panel panel-default">
-  <div class="panel-body">
-    <h3 class="panel-title"><?= $rowmenu['title'] ?></h3>
-  </div>
-  <div class="panel-body">  
-      <p> Beschrijving:  <td><?= $rowmenu['content'] ?> </p>
-      </div>
-</div>
-  <?php endforeach; ?>
- <!--  
-  CATEGORY
-  -->
- <?php foreach ($resultscat as $rowcat): ?>
-    <div class="panel panel-default">
-  <div class="panel-body">
-    <h3 class="panel-title"><?= $rowcat['title'] ?></h3>
-  </div>
-  <div class="panel-body">  
-      <p> Menu:  <td><?= $rowcat['menu'] ?> </p>
-      </div>
-</div>
-  <?php endforeach; ?>
+
+
+
+
+
+
     </div>
     </div>
     </div>

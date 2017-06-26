@@ -11,7 +11,7 @@
     <tr>
         <th>Titel</th>
         <th>Menu</th>
-        <th>Actions</th>
+        <th></th>
     </tr>
 
 <!-- Here's where we loop through our $cats query object, printing out  info -->
@@ -36,6 +36,7 @@
     <tr>
     </tr>
 </table>
+
   </div>
 </div>
 </div>

@@ -8,7 +8,7 @@ require(dirname(__FILE__)."/../config.php");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$sqlcat = "SELECT id, title, content FROM category";
+$sqlcat = "SELECT id, title  FROM category";
 $resultscat = $conn->query($sqlcat);
 ?>
 
@@ -28,7 +28,7 @@ $resultscat = $conn->query($sqlcat);
         <label>Categorie</label>
     <select name="category">
 <?php foreach ($resultscat as $rowcat): ?>
-    <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
+   <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
  <?php endforeach; ?>
 </select>
 
@@ -40,6 +40,7 @@ $resultscat = $conn->query($sqlcat);
     }
 
     echo $this->Form->input('content', ['rows' => '3']);	
+    ?> <br> <?php
     echo $this->Form->button(__('Wijzig gerecht'));
     echo $this->Form->end();
 ?>
