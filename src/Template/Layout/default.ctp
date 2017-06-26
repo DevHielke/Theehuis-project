@@ -42,10 +42,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a href="http://localhost:8080/Theehuis/code/users/">Users</a></li>
-                <li><a href="http://localhost:8080/Theehuis/code/dishes/">Gerechten</a></li>
+                <li><a href="http://localhost:8080/Theehuis/code/users/">Gebruikers</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/menus">Menus</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/category">Categorie</a></li>
+                 <li><a href="http://localhost:8080/Theehuis/code/dishes/">Gerechten</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/users/login/">Login</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/users/logout">Logout</a></li>
             </ul>
@@ -58,17 +58,5 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-    <footer>
-      <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-            </ul>
-        </div>
-    </nav>
-    </footer>
 </body>
 </html>

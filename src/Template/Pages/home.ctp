@@ -53,10 +53,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a href="http://localhost:8080/Theehuis/code/users/">Users</a></li>
-                <li><a href="http://localhost:8080/Theehuis/code/dishes/">Gerechten</a></li>
+                <li><a href="http://localhost:8080/Theehuis/code/users/">Gebruikers</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/menus">Menus</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/category">Categorie</a></li>
+                 <li><a href="http://localhost:8080/Theehuis/code/dishes/">Gerechten</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/users/login/">Login</a></li>
                 <li><a href="http://localhost:8080/Theehuis/code/users/logout">Logout</a></li>
             </ul>
@@ -73,45 +73,44 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-// Dishes
-$sql = "SELECT id, title, content, price, category FROM dishes";
-$resultdish = $conn->query($sql);
-// Menus
-$sqlmenu = "SELECT id, title, content FROM menus";
-$resultmenu = $conn->query($sqlmenu);
-
-$sqlmenutitel = "SELECT title FROM menus";
-$resultmenutitel = $conn->query($sqlmenutitel);
-
-// Category
-$sqlcat = "SELECT id, title, menu FROM category";
-$resultscat = $conn->query($sqlcat);
-
 
 
 // LUNCH
 
-$sqlselectmenu = "SELECT id, title, menu FROM category WHERE menu = 'Lunch'";
-$resultselectmenu = $conn->query($sqlselectmenu);
-
-$sqlbroodjes = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='7'";
+$sqlbroodjes = "SELECT id, title, content, price, category FROM dishes WHERE category ='Broodjes'";
 $resultbroodjes = $conn->query($sqlbroodjes); 
 
-$sqlsalads = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='17'";
+$sqlsalads = "SELECT id, title, content, price, category FROM dishes WHERE category ='Salades'";
 $resultsalads = $conn->query($sqlsalads); 
 
-$sqlwraps = "SELECT id, title, content, price, category FROM dishes WHERE categoryId ='15'";
-$resultwraps = $conn->query($sqlwraps); ?>
+$sqlwraps = "SELECT id, title, content, price, category FROM dishes WHERE category ='Wraps'";
+$resultwraps = $conn->query($sqlwraps); 
+
+$sqlclubs = "SELECT id, title, content, price, category FROM dishes WHERE category ='Clubs'";
+$resultclubs = $conn->query($sqlclubs); 
+
+$sqlsoep = "SELECT id, title, content, price, category FROM dishes WHERE category ='Soep'";
+$resultsoep = $conn->query($sqlsoep); 
+
+$sqlwarm = "SELECT id, title, content, price, category FROM dishes WHERE category ='Warm'";
+$resultwarm = $conn->query($sqlwarm); 
+
+$sqlkids = "SELECT id, title, content, price, category FROM dishes WHERE category ='Kids'";
+$resultkids = $conn->query($sqlkids); 
+
+$sqlstevig = "SELECT id, title, content, price, category FROM dishes WHERE category ='Stevigehap'";
+$resultstevig = $conn->query($sqlstevig); ?>
 <!-- Dinner -->
    <?php
+$sqlvoorgerecht = "SELECT id, title, content, price, category FROM dishes WHERE category ='Voorgerechten'";
+$resultvoorgerecht = $conn->query($sqlvoorgerecht); 
 
-$sqlselectmenu1 = "SELECT id, title, menu FROM category WHERE menu = 'Dinner'";
-$resultselectmenu1 = $conn->query($sqlselectmenu1);
-
-$sqldinnerdish = "SELECT id, title, content, price, category FROM dishes WHERE categoryId =id";
-$resultdinner = $conn->query($sqldinnerdish);
-
+$sqlhoofdgerecht = "SELECT id, title, content, price, category FROM dishes WHERE category ='Hoofdgerechten'";
+$ressulthoofdgerechten = $conn->query($sqlhoofdgerecht);
 ?>
+
+
+
 
   <div class="list-group">
     <a href="#" class="list-group-item">
@@ -142,16 +141,87 @@ $resultdinner = $conn->query($sqldinnerdish);
   € <?= $rowrap['price'] ?>  </li></ul>
         <?php endforeach; ?>
     </a>
+        <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Clubs</strong></p>
+         <?php foreach ($resultclubs as $clubs): ?>
+        <ul><li>  <?= $clubs['title'] ?> </br>
+ <?= $clubs['content'] ?> <br>
+  € <?= $clubs['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+      <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Soep</strong></p>
+         <?php foreach ($resultsoep as $soep): ?>
+        <ul><li>  <?= $soep['title'] ?> </br>
+ <?= $soep['content'] ?> <br>
+  € <?= $soep['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+
+       <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Warm</strong></p>
+         <?php foreach ($resultwarm as $warmm): ?>
+        <ul><li>  <?= $warmm['title'] ?> </br>
+ <?= $warmm['content'] ?> <br>
+  € <?= $warmm['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+       <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Kids</strong></p>
+         <?php foreach ($resultkids as $kids): ?>
+        <ul><li>  <?= $kids['title'] ?> </br>
+ <?= $kids['content'] ?> <br>
+  € <?= $kids['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+
+         <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Stevige hap</strong></p>
+         <?php foreach ($resultstevig as $stevig): ?>
+        <ul><li>  <?= $stevig['title'] ?> </br>
+ <?= $stevig['content'] ?> <br>
+  € <?= $stevig['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
   </div>
 
+<!-- DINNER -->
 
+    <div class="list-group">
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong>Dinner</strong></h4><hr>
+      <p class="list-group-item-text"><strong>Voorgerechten</strong></p>
+          <?php foreach ($resultvoorgerecht as $voorgerecht): ?>
+     <ul><li>  <?= $voorgerecht['title'] ?> </br>
+ <?= $voorgerecht['content'] ?> <br>
+  € <?= $voorgerecht['price'] ?>  </li></ul>
+     <?php endforeach; ?>
+    </a>
 
-
-
-
-
-
-
+  <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong></strong></h4>
+      <p class="list-group-item-text"><strong>Hoofdgerechten</strong></p>
+         <?php foreach ($ressulthoofdgerechten as $hoofdgerecht): ?>
+        <ul><li>  <?= $hoofdgerecht['title'] ?> </br>
+ <?= $hoofdgerecht['content'] ?> <br>
+  € <?= $hoofdgerecht['price'] ?>  </li></ul>
+        <?php endforeach; ?>
+    </a>
+  </div>
+    <div class="list-group">
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading"><strong>Dinner</strong></h4><hr>
+      <p class="list-group-item-text"><strong>Kijk voor de actuele desserts
+op de borden in het paviljoen
+</strong></p>
+          
+    </a></div>
+        
 
     </div>
     </div>
@@ -159,3 +229,4 @@ $resultdinner = $conn->query($sqldinnerdish);
     </div>
 </body>
 </html>
+

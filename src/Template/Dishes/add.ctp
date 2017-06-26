@@ -18,6 +18,11 @@ if ($conn->connect_error) {
 $sqlcat = "SELECT id, title FROM category";
 $resultscat = $conn->query($sqlcat);
 
+$sqlmenu = "SELECT id, title FROM menus";
+$resultsmenu = $conn->query($sqlmenu);
+
+
+
     echo $this->Form->create($dishes);
     echo $this->Form->input('title');
     echo $this->Form->input('price'); 
@@ -34,9 +39,19 @@ $resultscat = $conn->query($sqlcat);
  <?php endforeach; ?>
 </select>
 
+  <label>Menu</label>
+      <select name="menu">
+<?php foreach ($resultsmenu as $rowmenu): ?>
+   <option value=<?= $rowmenu['title'] ?>> <?= $rowmenu['title'] ?> </option>
+ <?php endforeach; ?>
+</select>
+
+
 <?php foreach ($resultscat as $rowcat): ?>
 <input type="hidden" name="categoryId" value=<?= $rowcat['id'] ?> />
    <?php endforeach; ?>
+
+
  <?php
 
     //var_dump($selectOption);die;

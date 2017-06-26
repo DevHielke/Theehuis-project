@@ -29,7 +29,7 @@ class UsersController extends AppController{
 	}
 	
 	public function logout(){
-		$this->Flash->success('You successfully have loged out');	
+		$this->Flash->success('U bent uitgelogd');	
 	return	$this->redirect($this->Auth->logout());
 	}
 	public function index()
@@ -48,10 +48,10 @@ class UsersController extends AppController{
 		if($this->request->is('post')) {
 			$this->Users->patchEntity($user,$this->request->data);
 			if($this->Users->save($user)){
-            $this->Flash->success(__('Your account has been registered .'));
+            $this->Flash->success(__('Gebruiker is aangemaakt.'));
             return $this->redirect(['action' => 'index']);
 			}
-			$this->Flash->error(__('Unable to register your account.'));
+			$this->Flash->error(__('Gebruiker aanmaken niet mogelijk'));
 		}
 		$this->set('user',$user);
 	}
@@ -61,10 +61,10 @@ class UsersController extends AppController{
 		if ($this->request->is(['post', 'put'])) {
 			$this->Users->patchEntity($user, $this->request->data);
 			if ($this->Users->save($user)) {
-				$this->Flash->success(__('Your profile data has been updated.'));
+				$this->Flash->success(__('Gebruiker updated'));
 				return $this->redirect(['action' => 'index']);
 			}
-			$this->Flash->error(__('Unable to update your profile.'));
+			$this->Flash->error(__('Niet mogelijk om gebruiker te wijzigen'));
 		}
 	
 		$this->set('user', $user);		
@@ -76,7 +76,7 @@ class UsersController extends AppController{
 	
 		$user = $this->Users->get($id);
 		if ($this->Users->delete($user)) {
-			$this->Flash->success(__('The user with id: {0} has been deleted.', h($id)));
+			$this->Flash->success(__('Gebruiker verwijderd.', h($id)));
 			return $this->redirect(['action' => 'index']);
 		}		
 		

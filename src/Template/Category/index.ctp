@@ -29,7 +29,7 @@
                 ['action' => 'delete', $cat->id],
                 ['confirm' => 'Are you sure?'])
             ?>
-            <?php //<?= $this->Html->link('Wijzig', ['action' => 'edit', $cat->id]) ?>
+         <?= $this->Html->link('Wijzig', ['action' => 'edit', $cat->id]) ?>
         </td>
     </tr>
   <?php endforeach; ?>

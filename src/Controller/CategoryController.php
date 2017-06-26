@@ -97,7 +97,7 @@ class CategoryController extends AppController
 	
 		$category = $this->Category->get($id);
 		if ($this->Category->delete($category)) {
-			$this->Flash->success(__('Het gerecht met id: {0} is verwijdered', h($id)));
+			$this->Flash->success(__('Het gerecht is verwijdered', h($id)));
 			return $this->redirect(['action' => 'index']);
 		}
 	}

@@ -8,12 +8,8 @@ require(dirname(__FILE__)."/../config.php");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$sqlcat = "SELECT id, title  FROM category";
-$resultscat = $conn->query($sqlcat);
-
-$sqlmenu = "SELECT id, title FROM menus";
+$sqlmenu = "SELECT id, title  FROM menus";
 $resultsmenu = $conn->query($sqlmenu);
-
 ?>
 
  <div class="layout">
@@ -21,28 +17,19 @@ $resultsmenu = $conn->query($sqlmenu);
       <div class="panel panel-primary">
   <div class="panel-heading">
 
-    <h3 class="panel-title">Wijzig gerecht</h3>
+    <h3 class="panel-title">Wijzig Categorie </h3>
   </div>
  <div class="panel-body">
 <?php
-    echo $this->Form->create($dishes);
+    echo $this->Form->create($category);
     echo $this->Form->input('title');
-    echo $this->Form->input('price');
 ?>
-        <label>Categorie</label>
-    <select name="category">
-<?php foreach ($resultscat as $rowcat): ?>
-   <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
- <?php endforeach; ?>
-</select>
-
-  <label>Menu</label>
-      <select name="menu">
+        <label>Menu</label>
+    <select name="menu">
 <?php foreach ($resultsmenu as $rowmenu): ?>
-   <option value=<?= $rowmenu['title'] ?>> <?= $rowmenu['title'] ?> </option>
+    <option value=<?= $rowmenu['title'] ?>> <?= $rowmenu['title'] ?> </option>
  <?php endforeach; ?>
 </select>
-
 
   
  <?php

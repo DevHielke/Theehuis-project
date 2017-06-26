@@ -30,10 +30,10 @@ public function view($id)
 	        if ($this->request->is('post')) {
 	            $menus = $this->Menus->patchEntity($menus, $this->request->data);
 	if ($this->Menus->save($menus)) {
-	                $this->Flash->success(__('Your Menu has been saved.'));
+	                $this->Flash->success(__('Menu is aangemaakt.'));
 	return $this->redirect(['action' => 'index']);
 	            }
-	            $this->Flash->error(__('Unable to add your menu.'));
+	            $this->Flash->error(__('Niet mogelijk om menu aan te maken'));
 	        }
 	        $this->set('menus', $menus);
 	    }
@@ -44,10 +44,10 @@ public function view($id)
 	        if ($this->request->is(['post', 'put'])) {
 	            $this->Menus->patchEntity($menus, $this->request->data);
 	            if ($this->Menus->save($menus)) {
-	                $this->Flash->success(__('Your menu has been updated.'));
+	                $this->Flash->success(__('Menu updated'));
 	                return $this->redirect(['action' => 'index']);
 	            }
-	            $this->Flash->error(__('Unable to update your menu.'));
+	            $this->Flash->error(__('Kon menu niet updaten'));
 	        }
 	     
 	        $this->set('menu', $menus);
@@ -59,7 +59,7 @@ public function view($id)
 	     
 	        $menus = $this->Menus->get($id);
 	        if ($this->Menus->delete($menus)) {
-	            $this->Flash->success(__('The menu with id: {0} has been deleted.', h($id)));
+	            $this->Flash->success(__('Het menu is verwijderd.', h($id)));
 	            return $this->redirect(['action' => 'index']);
 	        }
 	    } 

@@ -12,6 +12,7 @@
         <th>Gerecht</th>
         <th>Prijs</th>
         <th>Categorie</th>
+        <th>Menu</th>
         <th></th>
     </tr>
     <?php foreach ($dishes as $dish): ?>
@@ -20,9 +21,14 @@
             <?= $this->Html->link($dish->title, ['action' => 'view', $dish->id]) ?>
         </td>
         </td>
-         <td>€ <?= $dish->price ?></td>
+         <td>€ <?= $dish->price ?>
+         <img src="<?= $dish->imageName ?>">
+         </td>
         <td>
           <?= $dish->category ?>
+        <td>
+        <td>
+          <?= $dish->menu ?>
         <td>
             <?= $this->Form->postLink(
                 'Verwijder',
