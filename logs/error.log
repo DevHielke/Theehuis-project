@@ -8444,3 +8444,54 @@ Stack Trace:
 2017-06-26 06:43:49 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
 2017-06-26 06:44:55 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
 2017-06-26 06:46:58 Warning: Headers already sent in C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Filter\AssetFilter.php:148
+2017-06-26 11:34:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Theehuis/code/login
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2017-06-26 12:56:24 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephpcode.topics' doesn't exist
+Request URL: /Theehuis/code/topics
+Referer URL: http://localhost:8080/Theehuis/code/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'topics', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(435): Cake\Database\Schema\Collection->describe('topics')
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\TopicsTable))
+#4 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1313): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\TopicsTable))
+#5 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(959): Cake\ORM\Table->query()
+#6 C:\xampp\htdocs\Theehuis\code\src\Controller\TopicsController.php(50): Cake\ORM\Table->find('all')
+#7 [internal function]: App\Controller\TopicsController->index()
+#8 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TopicsController))
+#11 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2017-06-26 12:56:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephpcode.topics' doesn't exist
+Request URL: /Theehuis/code/topics
+Referer URL: http://localhost:8080/Theehuis/code/users/
+Stack Trace:
+#0 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'topics', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(435): Cake\Database\Schema\Collection->describe('topics')
+#2 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#3 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\TopicsTable))
+#4 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(1313): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\TopicsTable))
+#5 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\ORM\Table.php(959): Cake\ORM\Table->query()
+#6 C:\xampp\htdocs\Theehuis\code\src\Controller\TopicsController.php(50): Cake\ORM\Table->find('all')
+#7 [internal function]: App\Controller\TopicsController->index()
+#8 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Controller\Controller.php(435): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\xampp\htdocs\Theehuis\code\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TopicsController))
+#11 C:\xampp\htdocs\Theehuis\code\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+

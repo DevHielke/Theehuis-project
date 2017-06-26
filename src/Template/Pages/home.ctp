@@ -146,42 +146,6 @@ $resultdinner = $conn->query($sqldinnerdish);
 
 
 
-<div class="list-group">
-  <p class="list-group-item  active">
-    Lunch
-  </p>
-  <a href="#" class="list-group-item"><strong>Broodjes</strong></a>
-   <?php foreach ($resultbroodjes as $rowbrood): ?>
- <a href="" class="list-group-item">
- <ul><li>  <?= $rowbrood['title'] ?> </br>
- <?= $rowbrood['content'] ?> <br>
-  € <?= $rowbrood['price'] ?>  </li></ul>
-  <button class="btn btn-primary"> Bestel </button>
-   </a>
-    <?php endforeach; ?> 
-</div>
-
-<div class="list-group">
-  <p class="list-group-item  active">
-    Dinner
-  </p>
-  <?php foreach ($resultselectmenu1 as $rowmenuselects): ?>
-  <a href="#" class="list-group-item"><strong><?= $rowmenuselects['title'] ?></strong></a>
-   <?php foreach ($resultbroodjes as $rowbrood): ?>
- <a href="" class="list-group-item">
- <ul><li>  <?= $rowbrood['title'] ?> </br>
- <?= $rowbrood['content'] ?> <br>
-  € <?= $rowbrood['price'] ?>  </li></ul>
-  <button class="btn btn-primary"> Bestel </button>
-   </a>
-    <?php endforeach; ?>
-    <?php endforeach; ?>
-  </a>
-</div>
-
-
-
-
 
 
 
