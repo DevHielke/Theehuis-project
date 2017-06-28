@@ -22,13 +22,11 @@
         </td>
         </td>
          <td>€ <?= $dish->price ?>
-         <img src="<?= $dish->imageName ?>">
          </td>
         <td>
           <?= $dish->category ?>
-        <td>
-        <td>
-          <?= $dish->menu ?>
+        </td>
+        <td><?= $dish->menu ?></td>
         <td>
             <?= $this->Form->postLink(
                 'Verwijder',
