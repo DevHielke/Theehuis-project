@@ -1,17 +1,3 @@
-<!-- File: src/Template/Topics/edit.ctp -->
- <?php
-
-require(dirname(__FILE__)."/../config.php");
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-$sqlmenu = "SELECT id, title  FROM menus";
-$resultsmenu = $conn->query($sqlmenu);
-?>
-
  <div class="layout">
       <div class="layout-image"><br><br>
       <div class="panel panel-primary">
@@ -24,11 +10,11 @@ $resultsmenu = $conn->query($sqlmenu);
     echo $this->Form->create($category);
     echo $this->Form->input('title');
 ?>
-        <label>Menu</label>
+       <label>Menu</label>
     <select name="menu">
-<?php foreach ($resultsmenu as $rowmenu): ?>
-    <option value=<?= $rowmenu['title'] ?>> <?= $rowmenu['title'] ?> </option>
- <?php endforeach; ?>
+  <?php foreach ($options as $option): ?>
+    <option value=<?=  $option['title'] ?>> <?= $option['title'] ?> </option>
+  <?php endforeach; ?>
 </select>
 
   

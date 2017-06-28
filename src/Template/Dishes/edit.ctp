@@ -1,21 +1,3 @@
-<!-- File: src/Template/Topics/edit.ctp -->
- <?php
-
-require(dirname(__FILE__)."/../config.php");
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-$sqlcat = "SELECT id, title  FROM category";
-$resultscat = $conn->query($sqlcat);
-
-$sqlmenu = "SELECT id, title FROM menus";
-$resultsmenu = $conn->query($sqlmenu);
-
-?>
-
  <div class="layout">
       <div class="layout-image"><br><br>
       <div class="panel panel-primary">
@@ -29,22 +11,23 @@ $resultsmenu = $conn->query($sqlmenu);
     echo $this->Form->input('title');
     echo $this->Form->input('price');
 ?>
-        <label>Categorie</label>
+       <label>Categorie</label>
     <select name="category">
-<?php foreach ($resultscat as $rowcat): ?>
-   <option value=<?= $rowcat['title'] ?>> <?= $rowcat['title'] ?> </option>
- <?php endforeach; ?>
+  <?php foreach ($optionscat as $cat): ?>
+    <option value=<?=  $cat['title'] ?>> <?= $cat['title'] ?> </option>
+  <?php endforeach; ?>
+</select>
+   <label>Menu</label>
+    <select name="menu">
+  <?php foreach ($options as $option): ?>
+    <option value=<?=  $option['title'] ?>> <?= $option['title'] ?> </option>
+  <?php endforeach; ?>
 </select>
 
-  <label>Menu</label>
-      <select name="menu">
-<?php foreach ($resultsmenu as $rowmenu): ?>
-   <option value=<?= $rowmenu['title'] ?>> <?= $rowmenu['title'] ?> </option>
- <?php endforeach; ?>
-</select>
 
-
-  
+<?php foreach ($optionscat as $cat): ?>
+<input type="hidden" name="categoryId" value=<?= $cat['id'] ?> />
+   <?php endforeach; ?>
  <?php
 
     if (!empty ($selectOption)) {

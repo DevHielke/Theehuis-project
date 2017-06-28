@@ -20,7 +20,7 @@
     <tr>
         
         <td>
-            <?= $this->Html->link($cat->title, ['action' => 'view', $cat->id]) ?>
+            <?= $cat->title ?>
         </td>
         <td><?= $cat->menu ?></td>
         <td>

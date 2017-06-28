@@ -52,15 +52,22 @@ class CategoryController extends AppController
 
     public function view($id)
     {
-		// get() method get only one topic record using 
-		// the $id paraameter is received from the requested url 
-		// if request is /Category/view/5   the $id parameter value is 3
+		 $this->loadModel('Dishes'); //if it's not already loaded
+	 		  $optionsdishes = $this->Dishes->find('all'); //or whatever conditions you wan
+	  		  $this->set('optionsdishes',$optionsdishes);
+
+
         $category = $this->Category->get($id);
         $this->set(compact('category'));
     }
 
     public function add()
+
     {
+    	 $this->loadModel('Menus'); //if it's not already loaded
+	 		  $options = $this->Menus->find('all'); //or whatever conditions you wan
+	  		  $this->set('options',$options);
+
         $category = $this->Category->newEntity();
 		//if the user Category data to your application, the POST request  informations are registered in $this->request   
         if ($this->request->is('post')) { // 
@@ -71,6 +78,10 @@ class CategoryController extends AppController
 				// Flash messages are displayed in views 
                 $this->Flash->success(__('Gerecht toegevoegd!'));
                 return $this->redirect(['action' => 'index']);
+
+
+	    	 
+
             }
             $this->Flash->error(__('Gerecht toevoegen niet mogelijk'));
         }
@@ -78,6 +89,11 @@ class CategoryController extends AppController
     }
 	public function edit($id = null)
 	{
+		 // Load menus in
+		 $this->loadModel('Menus'); 
+	 		  $options = $this->Menus->find('all'); 
+	  		  $this->set('options',$options);
+
 		$category = $this->Category->get($id);
 		if ($this->request->is(['post', 'put'])) {
 			$this->Category->patchEntity($category, $this->request->data);

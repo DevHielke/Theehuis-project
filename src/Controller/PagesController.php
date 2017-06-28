@@ -40,7 +40,20 @@ class PagesController extends AppController
     public function display()
     {
 
-        
+         $this->loadModel('Dishes'); 
+              $optiondish = $this->Dishes->find('all')->where(['menu' => 'Lunch']);
+              $this->set('optiondish',$optiondish);
+
+          
+         $this->loadModel('Dishes'); 
+              $optiondishes = $this->Dishes->find('all')->where(['menu' => 'Dinner']);
+              $this->set('optiondishes',$optiondishes);
+
+          $this->loadModel('adish'); 
+              $adish = $this->Dishes->find('all')->where(['menu' => 'Dessert']);
+              $this->set('adish',$adish);
+
+            
             
         $path = func_get_args();
 

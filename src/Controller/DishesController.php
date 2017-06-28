@@ -1,9 +1,12 @@
 <?php 
 
 namespace App\Controller;
-
+use Cake\ORM\TableRegistry;
 use App\Controller\AppController;
 use Cake\Cache\Cache;
+
+
+
 class DishesController extends AppController
 {
 
@@ -48,7 +51,8 @@ class DishesController extends AppController
 		// find('all') get all records from Dishes model
 		// We uses set() to pass data to view 
         $this->set('dishes', $this->Dishes->find('all'));
-    }
+
+      }
 
     public function view($id)
     {
@@ -61,6 +65,15 @@ class DishesController extends AppController
 
     public function add()
     {
+
+    	 $this->loadModel('Menus'); 
+	 		  $options = $this->Menus->find('all'); 
+	  		  $this->set('options',$options);
+
+	  	  $this->loadModel('Category'); 
+	 		  $optionscat = $this->Category->find('all'); 
+	  		  $this->set('optionscat',$optionscat);
+
         $dishes = $this->Dishes->newEntity();
 		//if the user Dishes data to your application, the POST request  informations are registered in $this->request   
         if ($this->request->is('post')) { // 
@@ -78,6 +91,15 @@ class DishesController extends AppController
     }
 	public function edit($id = null)
 	{
+		// Get menus
+		 $this->loadModel('Menus'); 
+	 		  $options = $this->Menus->find('all'); 
+	  		  $this->set('options',$options);
+	  		  // Get category
+	  	  $this->loadModel('Category'); 
+	 		  $optionscat = $this->Category->find('all'); 
+	  		  $this->set('optionscat',$optionscat);
+
 		$dishes = $this->Dishes->get($id);
 		if ($this->request->is(['post', 'put'])) {
 			$this->Dishes->patchEntity($dishes, $this->request->data);
