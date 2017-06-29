@@ -23,8 +23,6 @@
     if (!empty ($selectOption)) {
      $selectOption = $_POST['category']; 
     }
-
-    echo $this->Form->input('content', ['rows' => '3']);	
     ?> <br> <?php
     echo $this->Form->button(__('Wijzig gerecht'));
     echo $this->Form->end();

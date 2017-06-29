@@ -1,26 +1,24 @@
-# CakePHP Application Skeleton
+# Systeem vereisten
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+•	Een pc of laptop met een internetverbinding
+•	Windows 10 besturingssysteem.
+•	Een text editor ( Sublime, notepad++, Dreamweaver, Atom, Phpstorm )
+•	Xampserver (https://www.apachefriends.org/download.html).
+•	PHPMyAdmin.
 
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
+## Installatie
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+Voor een lokale installatie, volg de volgende stappen:
+1.	Ga in een webbrowser naar keuze naar: https://github.com/DevHielke/Theehuis-project
+2.	Klik op ‘Clone or download’.
+3.	Klik vervolgens op ‘Download zip’. Het project wordt als zip bestand gedownload.
+4.	Pak het bestand Theehuisproject.zip’ uit en open de map in een text editor naar keuze. 
+5.	Start Xampp server en controleer of alle services werken.
+6.	In PHPMyAdmin, klik op importeren om een database te importeren. Kies vervolgens het bestand cakephpcode.sq’. Na op starten geklikt te hebben zal de database geïmporteerd worden.
 
-## Installation
 
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+## Configuratie
 
-If Composer is installed globally, run
-```bash
-composer create-project --prefer-dist cakephp/app [app_name]
-```
+	1. In het project, ga naar config> app.php en wijzig hier de database gegevens. Te vinden bij regel 232
+	2. Het project is nu gereed voor testen en aanpassingen.
 
-You should now be able to visit the path to where you installed the app and see
-the setup traffic lights.
-
-## Configuration
-
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.

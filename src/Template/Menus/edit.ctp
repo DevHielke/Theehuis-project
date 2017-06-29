@@ -8,7 +8,7 @@
  <div class="panel-body">
 <?php
     echo $this->Form->create($menu);
-    echo $this->Form->input('Title');
+    echo $this->Form->input('title');
     echo $this->Form->input('servedFrom');
     echo $this->Form->input('ServedTill');
     echo $this->Form->button(__('Maak menu'));
